@@ -7,11 +7,12 @@
 
 // Order important.
 require_once dirname(__FILE__) . '/php_ini.php';
-require_once dirname(__FILE__) . '/../lib_tom/php/database/DatabaseManager.php';
+require_once dirname(__FILE__) . '/../../library/tom/php/database/DatabaseManager.php';
 
 // Globally executed code. /////////////////////////////////////////////////////////////////////////
 
-try{
+try
+{
     DatabaseManager::add
     (
         array
@@ -24,6 +25,7 @@ try{
         )
     );
 }
-catch (Exception $e) {
+catch (Exception $e)
+{
     echo $e->getMessage();
 }
